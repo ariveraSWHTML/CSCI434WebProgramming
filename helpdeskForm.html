@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<!╌ This is used to create a form using HTML ╌> 
+
+   <head>
+      <title>Help Desk Ticket</title>
+   </head>
+	
+   <body>
+      <form >
+         <b>REQUESTOR:</b>  <br>         
+	   First Name: <input type = "text" name = "first_name" />
+         <br>
+         Last name: <input type = "text" name = "last_name" />
+         <br><br>
+         <b>LOCATION:</b> <br>         
+	   Building: <input type = "text" name = "location" />
+         <br>
+         Room: <input type = "text" name = "room" />
+         <br>
+         Phone Number: <input type = "text" name = "phone_number" />
+         <br>
+         EMail: <input type = "text" name = "email" />
+         <br><br>
+
+<b>REQUEST:</b> <br> 
+        
+<!╌ Add fields with dropdown menus ╌> 
+Device:
+<select name = "device">
+<option value = "Computer" selected>Computer</option>
+<option value = "Phone" selected>Phone</option>
+<option value = "Software" selected>Software</option>
+<option value = "Internet" selected>Internet</option>
+</select><br>
+
+         Device Serial/Name: <input type = "text" name = "device_info" />
+         <br>
+         Description of Issue: <input type = "text" name = "description" />
+         <br>
+
+Work Stoppage?
+<select name = "work_stoppage">
+<option value = "Yes" selected>Yes</option>
+<option value = "No" selected>No</option>
+</select><br><br>
+
+<!╌ Submit Buttons ╌> 
+<input type='submit' value='Click to Submit'><br>
+
+<input type='submit' value='Click to Exit'><br>
+
+      </form>
+   </body>
+	
+</html>
