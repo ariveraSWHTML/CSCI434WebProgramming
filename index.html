@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-
 <html>
 
-<!--This is where the header goes-->
 <head>
+
+<title>Computers, wonderful devices that can do anything!</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+<!--This is where the body starts, utilize Garamond Font-->
+
 body {
-  background-color: white;
+  font-family: "Garamond";	
   color: black;
+  background-image: url('backdrop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
 }
+
+/*Header styles*/
+h1 {  
+
+    padding-bottom: 40px; 
+    color:black;
+    font-family: Garamond;
+    font-size: 3vw; 
+    text-align: center;
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+}
+
+h2 {     
+    text-align: Center;
+    color:black;
+    font-family: Garamond;
+    padding-bottom: 5px;
+    font-size: 3vw; 
+
+/*Border style code
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+*/
+ }
+
+/*Paragraph styles*/
+p { 
+	text-align: left;
+	font-size: 1.5vw;	
+    	padding-bottom: 20px;
+	text-indent: 5em;
+}
+
+p1 { 
+	text-align: center;
+	font-size: 1.5vw;	
+        padding-bottom: 20px;
+  }
+
+p3 { 
+	text-align: center;
+	font-size: 1vw;	
+  }
+
+/* Align image at center */
 
 img {
   display: block;
@@ -16,47 +74,129 @@ img {
   margin-right: auto;
 }
 
-p1 {
-	margin: 4em;
-	text-align: center;
+
+/* List syle for horizontal nav bar */
+
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 12px;
+  overflow: hidden;
+  background-color: gray;
 }
-p2 {
-	margin: 4em;
-	text-align: center;
-}		
-	</style>
-  <meta charset="utf-8">
-  <title>Rivera's Main Webpage</title>
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  font-size: 1.6vw;
+  text-align: center;
+  padding: 24px 32px;
+  text-decoration: none;
+  background-color: gray;
+  text-shadow: .1em .1em .1em #C0C0C0;
+}
+
+/*change color on nav bar on hover*/
+li a:hover {
+  background-color: Blue;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/*Add buttons to page*/
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #0000FF;
+  display:block; 
+  margin: 0 auto;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: black;
+}
+
+</style>
+
 </head>
 
-<!-- This is where the body begins. This will consist of a header as well as a paragraph.  Use br tags to create a new line-->
 <body>
 
-  <h1 style="font-size:2vw; text-align:center;">Personal Life</h1>
+<div class="main">
+
+<!--Header info-->
+
+
+<!-- Creates lists of top horizontal nav bar -->
+
+<ul>
+  <li style= "font-size:2vw"><b><em> Menu: </b></em></li>
+ <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Desktops</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Laptops</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Tablets</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Monitors</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>PC Gaming</u></a></li>
+  <li><a href="mailto:Alberto.Rivera@sckans.edu?subject=CSCI434 Web Programming Message&body=Thank you for contacting me, how can I help? "><u>Contact Me</u></a></li>
+</ul>
+
+<h1><img src="computerMain.jfif" alt="computer image" style="float:left;width:7em;height:2.5em;"> <br> <u>Computers, their types and what they mean to me</u> <br> </h1>
+
+<!--Paragraphs-->
+<p> Opening Paragraph 1. </p>
  
-<!-- This is where the paragraph one begins-->
-  <p1 style="font-size:2vw"> My name is Alberto and I have been married for over 16 years and have 2 kids, a girl who is 11 years old and a boy who is 6 years old. After graduating high school in 2004, I spent about 2 years trying to figure out what to do and how to do it. First, I wanted to go to school, but the 'dream' school I wanted to go to was in Florida, a video game and design university named Fullsail. After seeing that wasn't going to happen and because of the fast food job I had I decided to join the military. At first I was going to join the Navy but decided against that and ended up joining the United States Air Force (USAF). Since 2006, I have been proudly serving our nation as a Security Forces Airman. Now, I am nearing the term for retirement from the USAF and hope to land a new career in programming.   </p1><br><br>
 
-<!-- Image placement -->
-<img align="middle" src="https://th.bing.com/th/id/R.b429d523ffd4ebd7986202946db59774?rik=RL1xEdNEj6IUnA&amp;riu=http%3A%2F%2Fwww.theleonardo.org%2Fwp-content%2Fuploads%2F2016%2F11%2Fvideo_games_header.jpg&amp;ehk=V3s8wddLyloo0aS6GUPTfeMqlKKjweSbjySqZm2aPJk%3D&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="USAF Logo" width="293" height="139"><br><br>
+<p> Paragraph 2. </p>
 
-
-<h1 style="font-size:2vw; text-align:center;">Hobbies</h1>
-<!-- This is where the paragraph two begins-->
-<p1 style="font-size:2vw"> My hobbies include spending time with family, video games, and learning about computers and programming. Several things I enjoy doing with my family is going out for dinner to new places, grilling out a delicious steak during the winter, and taking them out to shop. Another hobby of mine as mentioned earlier are video games. Video games have been a hobby of mine since I was about 5 years old. The first console I played on was the Atari, which consisted of a boxing game and the historic Pitfall. My other hobby is using or configuring a computer. What amazes me about computers, the internet, and software is what they can do and how they can improve processes. It's a passion of mine to create something that helps others fulfill their responsibilities with little to no effort.</p1><br><br>
-
-<!-- Image placement -->
-<img align="center" src="https://www.logolynx.com/images/logolynx/bf/bf06b70f20fd2de3a6338a6f0ca65aee.jpeg" alt="Video Game Characters" width="200" height="124"><br><br>
+<p> Paragraph 3. </p>
 
 
-<h1 style="font-size:2vw; text-align:center;"><u>Frequently Visited Websites</u></h1>
-<!-- Links to frequently visited websites-->
+<button class="button button1">Click to learn more about computers</button>
 
-<center>
-<a href="https://slickdeals.net"><b>Slick Deals</a> <br> <br>
-<a href="https://pcpartpicker.com"><b>PC Partpicker</a> <br> <br>
-<a href="https://www.ign.com"><b>1990s-2000</a> <br> <br>
-</center>
+
+<footer>
+<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p>
+
+<!--Footer containing audio-->
+ <aside>
 	
+ <audio autoplay>
+  <source src="win95.mp3" type="audio/mp3">
+  
+  </audio> <br>
+
+</footer>
+
+
 </body>
+
 </html> 
