@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<!╌ This is used to create a form using HTML where user enters a quantity of each type item and then the total is multiplied on the bottom ╌> 
+
+<head>
+
+<title>Al's Fast Food</title>
+
+</head>
+
+<form>
+   <u><b>MENU:</u></b><br><br>
+         Cheeseburger: Cost $3.00</br>
+         French Fries: Cost $1.50</br>
+         Soft Drink: Cost $1.00</br></br>
+	   10% Discounted Rate if you spend $20 or more...</br></br>
+         <u><b>Enter Order Quantity:</u></b><br><br>
+         
+Cheeseburger: </br>
+<input type="number" name="cheeseburger" id="cheeseburger"></br></br>
+
+Fries:</br>
+<input type="number" name="fries" id="fries"></br></br>
+
+Soft Drink:</br>
+<input type="number" name="drink" id="drink"></br></br>
+
+<input type="button" value="Get Order Total" onClick="cal()"></br></br>
+
+<p style="font-size:170%;"> Total: <span id="total"> </span> <br> You saved: <span id="discount" </span></p>
+</form>
+
+<script>
+function cal() { 
+  var c = document.getElementById("cheeseburger").value;
+  var f = document.getElementById("fries").value;
+  var d = document.getElementById("drink").value;
+  var x = (Math.round(Number(c) * 3) + (Number(f)* 1.5) + (Number(d)* 1)).toFixed(2);
+
+if (x >= 20) {
+    document.getElementById("total").innerHTML = '$' + (Math.round(x-(x *.1))).toFixed(2); document.getElementById("discount").innerHTML = '$' + (Math.round(x *.1)).toFixed(2) + ' Wow... look at that discount! '; 
+}
+  else { document.getElementById("total").innerHTML = '$' + x;
+document.getElementById("discount").innerHTML = ' Sorry, no savings today. Remember, spend more the $20 to receive a 10% discount.';
+}
+}
+</script>
+
+
+</body>
+	
+</html>

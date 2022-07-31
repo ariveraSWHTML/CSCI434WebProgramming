@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Build a Computer</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/*This is where the styling for the body starts*/
+
+body {
+  font-family: "Garamond";	
+  color: black;
+  background-image: url('backdrop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+/*Header styles*/
+h1 {  
+
+    padding-bottom: 40px; 
+    color:black;
+    font-family: Garamond;
+    font-size: 3vw; 
+    text-align: center;
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+}
+
+h2 {     
+    text-align: Center;
+    color:black;
+    font-family: Garamond;
+    padding-bottom: 5px;
+    font-size: 3vw; 
+
+/*Border style code
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+*/
+ }
+
+/*Paragraph styles*/
+p { 
+	text-align: left;
+	font-size: 1.5vw;	
+    	padding-bottom: 20px;
+	text-indent: 5em;
+}
+
+p1 { 
+	text-align: center;
+	font-size: 1.5vw;	
+        padding-bottom: 20px;
+  }
+
+p3 { 
+	text-align: center;
+	font-size: 1vw;	
+  }
+
+/* Align image at center */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* List syle for horizontal nav bar */
+
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 12px;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+
+/*create dropdown buttons for the link header*/
+
+}
+
+li a, .dropbtn {
+  display: block;
+  color: black;
+  font-size: 1.6vw;
+  text-align: center;
+  padding: 24px 32px;
+  text-decoration: none;
+  background-color: gray;
+  text-shadow: .1em .1em .1em #C0C0C0;
+}
+
+/*change color on nav bar on hover*/
+li a:hover {
+  background-color: Blue;
+}
+
+/*Add dropdown list for links header*/
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+/*Add buttons to page*/
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #0000FF;
+  display:block; 
+  margin: 0 auto;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<!--Header info-->
+
+
+<!-- Creates lists of top horizontal nav bar -->
+
+<ul>
+  <li style= "font-size:2vw"><b><em> Menu: </b></em></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Desktops</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Tablets</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>Monitors</u></a></li>
+  <li><a href="https://github.com/ariveraSWHTML/CSCI434WebProgramming"><b><u>PC Gaming</u></a></li>
+  <li><a href="mailto:Alberto.Rivera@sckans.edu?subject=CSCI434 Web Programming Message&body=Thank you for contacting me, how can I help? "><u>Contact Me</u></a></li>
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><u>Other Links</u></a>
+    <div class="dropdown-content">
+      <a href="https://www.pcpartpicker.com">PC Part Picker</a>
+      <a href="https://www.w3schools.com">W3 Schools</a>
+      <a href="https://www.store.steampowered.com">Steam Powered</a>
+    </div>
+  </li>
+</ul>
+
+<h2>The Why and How-to build a Gaming Computer</u> <br> </h2>
+
+<!--Paragraphs-->
+<p> Why build your own gaming computer? Well, besides potential cost savings, building a computer can be a great experiece and  rewarding yet stressful at the same time. Fortunately, there are many resources out there to assist you in building a gaming pc e.g. a 10 minute How-To tutorial on Youtube (link below). So what will you need to build a computer besides a positive attitude and desire? Let's talk about the main components. </p>
+ 
+
+<p style="height:250px"> There are several important components that you will need to research specifically when it comes to building a gaming desktop. Sure, you can save time and buy what a pre-built gaming systems but these may not have some of the upgraded components you may want. One of these components is a video card, due to a recent chip shortage, these video cards are on high demand and some are overpriced and sold individually. Of these video cards, you can choose a top of the line video card either the Nvidia RTX 3080 or the AMD Radeon RX 6800 XT. Video cards are important when it comes to the level and detail for not just video games but video and web design as well. Although video cards are important when it comes to graphics processing, you will need a processing unit that can manage the load.<br> <img src="nvidia.png" alt="Nvidia logo" style="float:left;width:12em;height:5em;"> <img src="amd-ryzen-logo.jpg" alt="AMD logo" style="float:right;width:12em;height:5em;"> <br></p>
+
+<p> The Central Processing Unit, or CPU, the brain of a computer, that executes logic to make them function. Everything from keyboard, mouse, and gamepad inputs all get processed by the CPU. Therefore you can imagine, that with a weak CPU then a owner cannot expect to accomplish many tasks simultaneuously. This is why it is one of the  most critical parts that needs to be powerful enough to manage gaming and video/photo editing over 1080p. </p>
+
+<h2><img src="gamingPC.jpg" alt="gaming desktop" style="float:center;width:12em;height:5em;"><br> <br> Here is a quick 10 minute video on building a gaming desktop <br><br> </h2>
+
+<!-- embedded video -->
+<center>
+<iframe width="788" height="443" src="https://www.youtube.com/embed/sLWXvNbJMpw" title="How to Build a Gaming PC in 2021 - Easy 10-minute Build Guide!" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<footer>
+<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br>
+
+<!--Footer containing audio-->
+ <aside>
+<br>
+<br>
+
+
+
+</footer>
+
+
+</body>
+
+</html> 
