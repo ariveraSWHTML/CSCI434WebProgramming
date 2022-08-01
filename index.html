@@ -47,7 +47,7 @@
         background-color: #fff;
       }
       .formContainer input[type=text],
-      .formContainer input[type=password] {
+      .formContainer input[type=text] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
@@ -55,7 +55,7 @@
         background: #eee;
       }
       .formContainer input[type=text]:focus,
-      .formContainer input[type=password]:focus {
+      .formContainer input[type=text]:focus {
         background-color: #ddd;
         outline: none;
       }
@@ -76,8 +76,6 @@
       .openButton:hover {
         opacity: 1;
       }
-
-
 
 
 /*This is where the body starts*/
@@ -228,18 +226,6 @@ li.dropdown {
   border-radius: 20px;
 }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #0000FF;
-  display:block; 
-  margin: 0 auto;
-}
-
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-}
 
 footer {
     display: flex;
@@ -290,9 +276,25 @@ Desktop computer, what it is and how it can be used to accomplish business and p
 A tablet or laptop, which is a form of computer that can be used while on the go away from home.  
 Monitors, which are critical in displaying information on a bigger screen (or a screen when connected to a desktop). 
 Finally, PC Gaming which is a hobby of mine and how entertaining it can be compared to other video game consoles.</p>
+<br>
+<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br><br>
+
+<!--section containing audio-->
+ <aside>
+<br>
+<br>
+<center>
+  <audio id="threeoclock" controls preload="auto">
+  <source src="win95.mp3" type="audio/mp3">
+  <p><a href="win95.mp3">"Windows 95 sound"</a></p>
+</audio>
+  </center>
 
 
-<div class="openBtn">
+<footer>
+  <center>
+  
+  <div class="openBtn">
       <button class="openButton" onclick="openForm()"><strong>Request additional information</strong></button>
     </div>
 
@@ -301,7 +303,7 @@ Finally, PC Gaming which is a hobby of mine and how entertaining it can be compa
         <form action="/action_page.php" class="formContainer">
           <h2>Complete the fields below to receive more information</h2>
           <label for="name">
-            <strong>E-mail</strong>
+            <strong>Name</strong>
           </label>
           <input type="text" id="name" placeholder="Enter your name" name="name" required>
 
@@ -310,7 +312,7 @@ Finally, PC Gaming which is a hobby of mine and how entertaining it can be compa
             <strong>E-Mail</strong>
           </label>
           <input type="password" id="email" placeholder="Enter your E-Mail" name="email" required>
-          <button type="submit" class="btn">Log in</button>
+          <button type="submit" class="btn">Submit info</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
       </div>
@@ -325,21 +327,8 @@ Finally, PC Gaming which is a hobby of mine and how entertaining it can be compa
       }
     </script>
 
+</center>
 
-
-<footer>
-<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br><br>
-
-<!--Footer containing audio-->
- <aside>
-<br>
-<br>
-<center>
-  <audio id="threeoclock" controls preload="auto">
-  <source src="win95.mp3" type="audio/mp3">
-  <p><a href="win95.mp3">"Windows 95 sound"</a></p>
-</audio>
-  </center>
 
 </footer>
 
