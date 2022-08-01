@@ -9,6 +9,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+/*add popup form*/
+{
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+        justify-content: left;
+      }
+
+.openButton {
+        border: none;
+        border-radius: 5px;
+        background-color: #1c87c9;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        position: fixed;
+      }
+      .moreInfoPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      }
+
+
+
+
 /*This is where the body starts*/
 /*Utilize Garamond Font*/
 
@@ -221,12 +292,43 @@ Monitors, which are critical in displaying information on a bigger screen (or a 
 Finally, PC Gaming which is a hobby of mine and how entertaining it can be compared to other video game consoles.</p>
 
 
+<div class="openBtn">
+      <button class="openButton" onclick="openForm()"><strong>Request additional information</strong></button>
+    </div>
 
-<a href="mailto:Alberto.Rivera@sckans.edu?subject=CSCI434 Web Programming Message&body=Thank you for contacting me, how can I help? "><button class="button button1">Click to learn more about computers</button>
+    <div class="moreInfoPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>Complete the fields below to receive more information</h2>
+          <label for="name">
+            <strong>E-mail</strong>
+          </label>
+          <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+
+          <label for="email">
+            <strong>E-Mail</strong>
+          </label>
+          <input type="password" id="email" placeholder="Enter your E-Mail" name="email" required>
+          <button type="submit" class="btn">Log in</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+    </script>
+
 
 
 <footer>
-<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br>
+<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br><br>
 
 <!--Footer containing audio-->
  <aside>
@@ -235,7 +337,7 @@ Finally, PC Gaming which is a hobby of mine and how entertaining it can be compa
 <center>
   <audio id="threeoclock" controls preload="auto">
   <source src="win95.mp3" type="audio/mp3">
-  <p>Download <a href="win95.mp3">"Windows 95"</a></p>
+  <p><a href="win95.mp3">"Windows 95 sound"</a></p>
 </audio>
   </center>
 
