@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Tablets</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/*add popup form*/
+{
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+text-align: center;  
+        justify-content: left;
+      }
+
+.openButton {
+        border: none;
+        border-radius: 5px;
+        background-color: #1c87c9;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        position: fixed;
+      }
+      .moreInfoPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=text] {
+
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=text]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      }
+
+
+/*This is where the body starts*/
+/*Utilize Garamond Font*/
+
+body {
+  font-family: "Garamond";	
+  color: black;
+  background-image: url('backdrop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+/*Header styles*/
+h1 {  
+
+    padding-bottom: 40px; 
+    color:black;
+    font-family: Garamond;
+    font-size: 3vw; 
+    text-align: center;
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+}
+
+h2 {     
+    text-align: Center;
+    color:black;
+    font-family: Garamond;
+    padding-bottom: 5px;
+    font-size: 3vw; 
+
+/*Border style code
+    border-style: outset;
+    border-width: 7px;
+    border-color: blue;
+*/
+ }
+
+/*Paragraph styles*/
+p { 
+	text-align: left;
+	font-size: 1.5vw;	
+    	padding-bottom: 20px;
+	text-indent: 5em;
+}
+
+p1 { 
+	text-align: center;
+	font-size: 1.5vw;	
+        padding-bottom: 20px;
+  }
+
+p3 { 
+	text-align: center;
+	font-size: 1vw;	
+  }
+
+/* Align image at center */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* List syle for horizontal nav bar */
+
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 12px;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: black;
+  font-size: 1.6vw;
+  text-align: center;
+  padding: 24px 32px;
+  text-decoration: none;
+  background-color: gray;
+  text-shadow: .1em .1em .1em #C0C0C0;
+}
+
+/*change color on nav bar on hover*/
+li a:hover {
+  background-color: Blue;
+}
+
+/*Add dropdown list for links header*/
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+/*Add buttons to page*/
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<!--Header info-->
+
+
+<!-- Creates lists of top horizontal nav bar -->
+
+<ul>
+  <li style= "font-size:2vw"><b><em> Menu: </b></em></li>
+  <li><a href="https://ariveraswhtml.github.io/CSCI434WebProgramming/"><b><u>Home</u></a></li>
+  <li><a href="https://ariveraswhtml.github.io/CSCI434WebProgramming/tablets.html"><b><u>Desktops</u></a></li>
+  <li><a href="https://ariveraswhtml.github.io/CSCI434WebProgramming/monitors.html"><b><u>Monitors</u></a></li>
+  <li><a href="https://ariveraswhtml.github.io/CSCI434WebProgramming/pcgaming.html"><b><u>PC Gaming</u></a></li>
+  <li><a href="mailto:Alberto.Rivera@sckans.edu?subject=CSCI434 Web Programming Message&body=Thank you for contacting me, how can I help? "><u>Contact Me</u></a></li>
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><u>Other Links</u></a>
+    <div class="dropdown-content">
+      <a href="https://www.pcpartpicker.com">PC Part Picker</a>
+      <a href="https://www.w3schools.com">W3 Schools</a>
+      <a href="https://www.store.steampowered.com">Steam Powered</a>
+    </div>
+  </li>
+</ul>
+
+<h1><img src="laptop_metro.jpg" alt="laptop_metro" style="float:left;width:7em;height:2.5em;"> <br> <u>Tablets and Laptops</u> <br> </h1>
+
+<!--Paragraphs-->
+<p> Unlike Desktop computers, mobile devices such as phones, laptops, and tablets provide a huge convenience for the consumer. Conveniences like being able to walk into a coffee shop or on the road on a metro, the ability to be able to check on email, work, and social accounts freely and easily makes these devices successful. A tablet or Laptop offers competition to the desktop when it comes to using applications for work or entertainment. While laptops or tablets are not as powerful as the desktop, the trade-off of convenience and ease of use is typically the trade-off.
+</p>
+ 
+
+<h2><img src="laptop_coffeeshop.jpg" alt="laptop_coffee" style="float:center;width:12em;height:5em;"><br> <br> Different forms: All In Ones, Small, Medium, or Large! <br><br> </h2>
+
+
+<p> Laptops and tablets have been in competition with Desktop computers for many years. While devices like laptops and tablets are significantly smaller and cannot be equipped with hardware compared to computers, their performance side by side can still be compareable. While laptops might not be able to handle 8K video, they can still perform pretty well where consumers might not care about the increased pixels or frames per second. Check out this youtube video below providing an example on tablets and laptops and how they compare to desktops.</p>
+<br>
+
+<!-- embedded video -->
+<center>
+<iframe width="788" height="443" src="https://www.youtube.com/embed/_s5ixsQay2k" title="Desktop vs Laptop vs Tablet" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<footer>
+
+<center>
+  <div class="openBtn">
+      <button class="openButton" onclick="openForm()" ><strong>Request additional information</strong></button>
+    </div>
+
+
+    <div class="moreInfoPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>Complete the fields below to receive more information</h2>
+          <label for="name">
+            <strong>Name</strong>
+          </label>
+          <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+
+          <label for="email">
+            <strong>E-Mail</strong>
+          </label>
+          <input type="text" id="email" placeholder="Enter your E-Mail" name="email" required> <br>
+          <button type="submit" class="btn">Submit info</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+
+<script>
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+</script>
+  </center>
+
+<p style="text-align:center;">***A page created for my CSCI434 Web Programming Course***</p><br><br>
+
+</footer>
+
+
+</body>
+
+</html> 
